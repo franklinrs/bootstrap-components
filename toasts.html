@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toasts - Bootstrap</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap-5.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="icon" href="assets/bootstrap-icons/icons/bootstrap-fill.svg">
+</head>
+
+<body>
+    <!-- Toast -->
+    <div id="ToastContainer" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">Toast</strong>
+            <small>Just now</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+        </div>
+      </div>
+
+    <a href="index.html"><i class="bi bi-arrow-left-circle-fill p-3 back"></i></a>
+    <header class="container-fluid px-0 gradient-bg text-white">
+        <div class="row py-5 justify-content-center mx-0">
+            <div class="w-50 my-5 text-center">
+                <h3 class="display-3 fw-bold">Toasts</h3>
+                <hr>
+                <p class="lead mb-5">Toasts are push notifications to attract the user's attention</p>
+                <a href="https://getbootstrap.com/docs/5.1/components/popovers/" target="_blank">
+                    <button class="btn rounded-pill bg-light text-start p-3 btn-doc">
+                        <span class="d-flex align-items-center lh-1"><i
+                                class="bi bi-bootstrap-fill fs-4 mx-2"></i>Official Documentation</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,64L48,96C96,128,192,192,288,181.3C384,171,480,85,576,69.3C672,53,768,107,864,154.7C960,203,1056,245,1152,224C1248,203,1344,117,1392,74.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </header>
+    <main class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="w-50 mb-5">
+                <h3 class="display-5 text-center">Components</h3>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-lg-12 text-center">
+                <section class="p-4">
+                    <p class="lead">Press the buttons to display</p>
+                    <hr>
+                    <div class="row g-3 justify-content-center my-4">
+                        <!-- Top-left button -->
+                        <div class="col-auto">
+                            <button id="topLeft" class="btn btn-primary">Top-left</button>
+                        </div>
+                        <!-- Top-center button -->
+                        <div class="col-auto">
+                            <button id="topCenter" class="btn btn-primary">Top-center</button>
+                        </div>
+                        <!-- Top-right button -->
+                        <div class="col-auto">
+                            <button id="topRight" class="btn btn-primary">Top-right</button>
+                        </div>
+                        <!-- Center-left button -->
+                        <div class="col-auto">
+                            <button id="centerLeft" class="btn btn-primary">Center-left</button>
+                        </div>
+                        <!-- Center button -->
+                        <div class="col-auto">
+                            <button id="center" class="btn btn-primary">Center</button>
+                        </div>
+                        <!-- Center-right button -->
+                        <div class="col-auto">
+                            <button id="centerRight" class="btn btn-primary">Center-right</button>
+                        </div>
+                        <!-- Bottom-left button -->
+                        <div class="col-auto">
+                            <button id="bottomLeft" class="btn btn-primary">Bottom-left</button>
+                        </div>
+                        <!-- Bottom-center button -->
+                        <div class="col-auto">
+                            <button id="bottomCenter" class="btn btn-primary">Bottom-center</button>
+                        </div>
+                        <!-- Bottom-right button -->
+                        <div class="col-auto">
+                            <button id="bottomRight" class="btn btn-primary">Bottom-right</button>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+    <footer class="px-3 py-5 text-center bg-dark">
+        <p class="lead text-light">Franklin Ramirez Soto | 2022</p>
+    </footer>
+    <script src="css/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="js/toast.js"></script>
+</body>
+
+</html>
