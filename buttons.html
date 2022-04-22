@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons - Bootstrap</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap-5.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="icon" href="assets/bootstrap-icons/icons/bootstrap-fill.svg">
+</head>
+
+<body>
+    <a href="index.html"><i class="bi bi-arrow-left-circle-fill p-3 back"></i></a>
+    <header class="container-fluid px-0 gradient-bg text-white">
+        <div class="row py-5 justify-content-center mx-0">
+            <div class="w-50 my-5 text-center">
+                <h3 class="display-3 fw-bold">Buttons</h3>
+                <hr>
+                <p class="lead mb-5">Buttons can look much better with Bootstrap</p>
+                <a href="https://getbootstrap.com/docs/5.1/components/buttons/" target="_blank">
+                    <button class="btn rounded-pill bg-light text-start p-3 btn-doc">
+                        <span class="d-flex align-items-center lh-1"><i
+                                class="bi bi-bootstrap-fill fs-4 mx-2"></i>Official Documentation</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,64L48,96C96,128,192,192,288,181.3C384,171,480,85,576,69.3C672,53,768,107,864,154.7C960,203,1056,245,1152,224C1248,203,1344,117,1392,74.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </header>
+    <main class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="w-50 mb-5">
+                <h3 class="display-5 text-center">Components</h3>
+            </div>
+        </div>
+        <div class="row g-3">
+            <!-- Regular Buttons -->
+            <div class="col-lg-6">
+                <section class="p-4 text-center">
+                    <h3>Standalone buttons</h3>
+                    <hr>
+                    <p class="lead">Simple</p>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary">Button 1</button>
+                        <button type="button" class="btn btn-info">Button 2</button>
+                        <button type="button" class="btn btn-dark">Button 3</button>
+                    </div>
+                    <p class="lead">Outline</p>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-outline-primary">Button 1</button>
+                        <button type="button" class="btn btn-outline-info">Button 2</button>
+                        <button type="button" class="btn btn-outline-dark">Button 3</button>
+                    </div>
+                    <p class="lead">States</p>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary">Regular</button>
+                        <button type="button" class="btn btn-primary active" aria-pressed="true">Active</button>
+                        <button type="button" class="btn btn-primary" disabled>Disabled</button>
+                    </div>
+                    <p class="lead">Rounded-pill</p>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary rounded-pill">Button 1</button>
+                        <button type="button" class="btn btn-info rounded-pill">Button 2</button>
+                        <button type="button" class="btn btn-dark rounded-pill">Button 3</button>
+                    </div>
+                    <p class="lead">Sizes</p>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary btn-sm">Button 1</button>
+                        <button type="button" class="btn btn-info btn-md">Button 2</button>
+                        <button type="button" class="btn btn-dark btn-lg">Button 3</button>
+                    </div>
+                </section>
+            </div>
+            <!-- Button group -->
+            <div class="col-lg-6">
+                <section class="p-4 text-center">
+                    <h3>Button group</h3>
+                    <hr>
+                    <p class="lead">Simple</p>
+                    <div class="mb-3">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-primary active" aria-current="page">Button 1</a>
+                            <a href="#" class="btn btn-info">Button 2</a>
+                            <a href="#" class="btn btn-dark">Button 3</a>
+                          </div>
+                    </div> 
+                    <p class="lead">Checkbox</p>
+                    <div class="mb-3">
+                        <div class="btn-group">
+                            <div class="btn-group" role="group" aria-label="Checkbox Button Group">
+                                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck1">Button 1</label>
+                              
+                                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck2">Button 2</label>
+                              
+                                <input type="checkbox" class="btn-check " id="btncheck3" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck3">Button 3</label>
+                              </div>
+                          </div>
+                    </div>
+                    <p class="lead">Radio</p>
+                    <div class="mb-3">
+                        <div class="btn-group mb-3">
+                            <div class="btn-group" role="group" aria-label="Radio Button Group">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+                              
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+                              
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+                        </div>
+                    </div>
+                    <p class="lead">Nested</p>
+                    <div class="mb-3">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <button type="button" class="btn btn-primary">Button 1</button>
+                            <button type="button" class="btn btn-primary">Button 2</button>
+                          
+                            <div class="btn-group" role="group">
+                              <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Button 3
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li><a class="dropdown-item" href="#">Item 1</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+                    <p class="lead">Vertical</p>
+                    <div class="mb-3">
+                        <div class="btn-group-vertical">
+                            <a href="#" class="btn btn-primary active" aria-current="page">Button 1</a>
+                            <a href="#" class="btn btn-info">Button 2</a>
+                            <a href="#" class="btn btn-dark">Button 3</a>
+                          </div>
+                    </div>                       
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="px-3 py-5 text-center bg-dark">
+        <p class="lead text-light">Franklin Ramirez Soto | 2022</p>
+    </footer>
+    <script src="css/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="js/alerts.js"></script>
+</body>
+
+</html>

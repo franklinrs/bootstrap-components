@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Bootstrap</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap-5.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="icon" href="assets/bootstrap-icons/icons/bootstrap-fill.svg">
+</head>
+
+<body>
+    <a href="index.html"><i class="bi bi-arrow-left-circle-fill p-3 back"></i></a>
+    <header class="container-fluid px-0 gradient-bg text-white">
+        <div class="row py-5 justify-content-center mx-0">
+            <div class="w-50 my-5 text-center">
+                <h3 class="display-3 fw-bold">Forms</h3>
+                <hr>
+                <p class="lead mb-5">Forms can look much better with Bootstrap</p>
+                <a href="https://getbootstrap.com/docs/5.1/forms/overview/" target="_blank">
+                    <button class="btn rounded-pill bg-light text-start p-3 btn-doc">
+                        <span class="d-flex align-items-center lh-1"><i
+                                class="bi bi-bootstrap-fill fs-4 mx-2"></i>Official Documentation</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,64L48,96C96,128,192,192,288,181.3C384,171,480,85,576,69.3C672,53,768,107,864,154.7C960,203,1056,245,1152,224C1248,203,1344,117,1392,74.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </header>
+    <main class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="w-50 mb-5">
+                <h3 class="display-5 text-center">Components</h3>
+            </div>
+        </div>
+        <div class="row g-3">
+            <!-- Input Text -->
+            <div class="col-lg-6">
+                <section class="p-4">
+                    <h3>Input Text</h3>
+                    <hr>
+                    <form action="#">
+                        <label for="regular" class="form-label">Without Placeholder</label>
+                        <input type="email" class="form-control mb-2" id="regular">
+                        <input type="email" class="form-control mb-2" id="regular" placeholder="With Placeholder">
+                        <input type="email" class="form-control mb-2 form-control-sm" id="regular" placeholder="Small">
+                        <input type="email" class="form-control mb-2 form-control-lg" id="regular" placeholder="Large">
+                        <input class="form-control mb-2" type="text" placeholder="Disabled"
+                            aria-label="Disabled input example" disabled>
+                        <input class="form-control mb-2" type="text" value="Disabled readonly"
+                            aria-label="Disabled input example" disabled readonly>
+                        <input type="password" class="form-control mb-2" id="inputPassword" placeholder="Password">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Textarea"></textarea>
+                    </form>
+                </section>
+            </div>
+            <!-- Other Inputs -->
+            <div class="col-lg-6">
+                <section class="p-4">
+                    <h3>Other Inputs</h3>
+                    <hr>
+                    <form action="#">
+
+                        <select class="form-select mb-2" aria-label="Default select example">
+                            <option selected>Select Menu</option>
+                            <option value="1">Item 1</option>
+                            <option value="2">Item 2</option>
+                            <option value="3">Item 3</option>
+                        </select>
+
+                        <select class="form-select mb-2" size="2" multiple aria-label="multiple select example">
+                            <option selected>Multiple Selection</option>
+                            <option value="1">Item 1</option>
+                            <option value="2">Item 2</option>
+                        </select>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Checkbox
+                            </label>
+                        </div>
+
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Radio 1
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Radio 2
+                            </label>
+                        </div>
+
+                        <div class="form-check form-switch mb-2">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                                checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Switch</label>
+                        </div>
+
+                        <div class="mb-2">  
+                            <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btn-check-2-outlined">Check on Toggle</label><br>
+                        </div>
+
+                        <label for="customRange1" class="form-label">Range</label>
+                        <input type="range" class="form-range mb-2" id="customRange1">
+
+                        <div class="mb-2">
+                            <label for="formFile" class="form-label">File Input</label>
+                            <input class="form-control" type="file" id="formFile">
+                          </div>
+                    </form>
+                </section>
+            </div>
+            <!-- Input Group -->
+            <div class="col-lg-6">
+                <section class="p-4">
+                    <h3>Input Group</h3>
+                    <hr>
+                    <form action="#">
+                        <div class="input-group mb-2">
+                            <span class="input-group-text" id="basic-addon3">https://site.com/user/</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">@site.com</span>
+                        </div>
+
+                        <div class="input-group mb-2">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" aria-label="Both sides" placeholder="Both sides">
+                            <span class="input-group-text">.00</span>
+                          </div>
+
+                        <div class="input-group mb-2">
+                            <span class="input-group-text">With textarea</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                          </div>
+
+                          <div class="input-group mb-2">
+                            <div class="input-group-text">
+                              <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Checkbox">
+                          </div>
+                          
+                          <div class="input-group mb-2">
+                            <div class="input-group-text">
+                              <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="Radio">
+                          </div>
+                    </form>
+                </section>
+            </div>
+            <!-- Floating labels -->
+            <div class="col-lg-6">
+                <section class="p-4">
+                    <h3>Floating labels</h3>
+                    <hr>
+                    <form action="#">
+
+                        <div class="form-floating mb-2">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="user@site.com">
+                            <label for="floatingInput">Regular</label>
+                          </div>
+
+                          <div class="form-floating mb-2">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                          </div>
+
+                          <div class="form-floating mb-2">
+                            <textarea class="form-control" placeholder="Write here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Textarea</label>
+                          </div>
+
+                          <div class="form-floating mb-2">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option value="1">Item 1</option>
+                              <option value="2">Item 2</option>
+                              <option value="3">Item 3</option>
+                            </select>
+                            <label for="floatingSelect">Select Menu</label>
+                          </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="px-3 py-5 text-center bg-dark">
+        <p class="lead text-light">Franklin Ramirez Soto | 2022</p>
+    </footer>
+    <script src="css/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="js/alerts.js"></script>
+</body>
+
+</html>

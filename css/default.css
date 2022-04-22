@@ -1,0 +1,26 @@
+.gradient-bg {
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to  left #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+.back {
+    font-size: 3rem;
+    color: #ad87f8;
+    position: fixed;
+
+}
+
+.btn-doc:hover {
+    color: white;
+    background-color: rgb(41, 35, 35) !important;
+}
+
+.min-width-collapse {
+    min-width: 250px;
+}
+
+.scroll-container {
+    height: 200px;
+    overflow-y: scroll;
+}

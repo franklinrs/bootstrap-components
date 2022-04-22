@@ -1,0 +1,23 @@
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bootstrap-logo {
+    font-size: 6em;
+}
+
+.index-img {
+    width: 75vw;
+}
+
+.pop:hover{
+    transform: scale(1.05);
+}
+
+body {
+    position: relative;
+}
+
+
+
+
